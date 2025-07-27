@@ -1,0 +1,30 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "myfreess/rwsdiff/knn"
+
+import(
+  "moonbitlang/core/immut/array"
+)
+
+// Values
+
+// Types and methods
+pub struct KDTree {
+  point : @array.T[Int]
+  partition_axis : Int
+  left : KDTree?
+  right : KDTree?
+}
+fn KDTree::from(ArrayView[@array.T[Int]], Int) -> Self
+fn KDTree::is_leaf(Self) -> Bool
+fn KDTree::singleton(@array.T[Int]) -> Self
+
+pub struct LinearScanKNN {
+  dimension : Int
+}
+fn LinearScanKNN::new(Int) -> Self
+fn LinearScanKNN::search_by(Self, @array.T[Int], Int) -> Array[@array.T[Int]]
+
+// Type aliases
+
+// Traits
+

@@ -1,0 +1,1 @@
+typealias @immut/array.T[Int] as Point

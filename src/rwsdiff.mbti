@@ -1,0 +1,20 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "myfreess/rwsdiff"
+
+// Values
+
+// Types and methods
+pub enum EditScript {
+  Rename
+  InsertLeaf
+  DeleteLeaf
+  InsertSubTree
+  DeleteSubTree
+  Move
+  Copy
+}
+
+// Type aliases
+
+// Traits
+
